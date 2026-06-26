@@ -1,0 +1,59 @@
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.Python
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+
+# Packaging / build artifacts
+build/
+dist/
+site/
+.eggs/
+*.egg-info/
+
+# Notebook / test / tool caches
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Logs and temp files
+logs/
+*.log
+*.tmp
+*.temp
+
+# Data science artifacts
+data/
+datasets/
+raw_data/
+processed_data/
+models/
+checkpoints/
+artifacts/
+outputs/
+results/
+reports/
+mlruns/
+wandb/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Secrets and environment files
+.env
+.env.*
+*.key
+*.pem
