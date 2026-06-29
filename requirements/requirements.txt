@@ -4,13 +4,17 @@ scipy
 pandas
 matplotlib
 seaborn
+missingno
 plotly
 scikit-learn
 xgboost
 lightgbm
+openpyxl
 catboost
+shap
 torch
 torchvision
+statsmodels
 torchaudio
 tensorflow
 keras
