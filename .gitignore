@@ -50,7 +50,7 @@ wandb/
 .DS_Store
 Thumbs.db
 .idea/
-.vscode/
+# .vscode/
 
 # Secrets and environment files
 .env
