@@ -33,7 +33,6 @@ logs/
 *.temp
 
 # Data science artifacts
-data/
 datasets/
 raw_data/
 processed_data/
