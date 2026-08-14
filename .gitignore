@@ -1,59 +1,62 @@
+# Python / Byte-compiled
 __pycache__/
 *.py[cod]
-*.pyd
+*$py.class
 *.so
 .Python
 
 # Virtual environments
-env/
 venv/
 .venv/
+env/
 ENV/
 
-# Packaging / build artifacts
-dsa/
+# Build & packaging
 build/
 dist/
-site/
-.eggs/
 *.egg-info/
+.eggs/
 
-# Notebook / test / tool caches
-.ipynb_checkpoints/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-.coverage.*
-htmlcov/
+# IDEs & Editors
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# Logs and temp files
-logs/
-*.log
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.token
+
+# Logs & temp files
+logs/*.log
+!logs/.gitkeep
 *.tmp
 *.temp
 
-# Data science artifacts
-datasets/
-raw_data/
-processed_data/
-models/
-checkpoints/
-artifacts/
-outputs/
-results/
-reports/
-mlruns/
-wandb/
+# Pipeline & Model Artifacts
+artifacts/models/*
+!artifacts/models/.gitkeep
+artifacts/reports/*
+!artifacts/reports/.gitkeep
+artifacts/metrics/*
+!artifacts/metrics/.gitkeep
+artifacts/datasets/*
+!artifacts/datasets/.gitkeep
 
-# OS / editor files
-.DS_Store
-Thumbs.db
-.idea/
-# .vscode/
+# Raw / confidential client data
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
 
-# Secrets and environment files
-.env
-.env.*
-*.key
-*.pem
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Notebook checkpoints
+.ipynb_checkpoints/

@@ -1,0 +1,37 @@
+system:
+  name: "Mine Dust Analysis Production MLOps Platform"
+  version: "2.0.0"
+  environment: "development"
+
+pipeline:
+  random_state: 42
+  test_size: 0.2
+  cv_folds: 5
+
+modeling:
+  targets:
+    - "PM10"
+    - "PM2.5"
+  primary_metric: "RMSE"
+  secondary_metric: "MAE"
+  supporting_metric: "R2"
+  models_to_train:
+    - "linear_regression"
+    - "decision_tree"
+    - "random_forest"
+    - "bagging"
+    - "svr"
+    - "xgboost"
+    - "voting"
+
+artifacts:
+  base_dir: "artifacts"
+  models_dir: "artifacts/models"
+  reports_dir: "artifacts/reports"
+  metrics_dir: "artifacts/metrics"
+  datasets_dir: "artifacts/datasets"
+
+logging:
+  level: "INFO"
+  format: "json"
+  log_file: "logs/pipeline.log"

@@ -1,0 +1,15 @@
+{
+    "git_commit": "2b73a476ba7b48bf6986a32694cd7e79a6265463",
+    "jenkins_build_number": "N/A",
+    "dataset_hash": "488192605e5b9db4f6d01210bd868937e2fb0fc322702f1d8aa9c05dd1b7c1dc",
+    "model_version": "v1.0.11",
+    "selected_model": "Support Vector Regressor (SVR)",
+    "MAE": 40.7974,
+    "RMSE": 47.8944,
+    "R2": 0.0037,
+    "target": "PM10",
+    "selection_metric": "RMSE",
+    "training_mode": "full",
+    "report_html_path": "C:\\Machine Learning\\model_training\\artifacts\\reports\\executive_report_job-fdd741f4.html",
+    "job_id": "job-fdd741f4"
+}

@@ -1,0 +1,75 @@
+# Configurable Schema Definition for Mine Dust Dataset Ingestion & Validation
+
+version: "2.0"
+
+targets:
+  - name: "PM10"
+    type: "numeric"
+    required: true
+    min: 0.0
+    max: 1000.0
+  - name: "PM2.5"
+    type: "numeric"
+    required: true
+    min: 0.0
+    max: 1000.0
+
+legacy_features:
+  - name: "YEAR"
+    type: "integer"
+    required: false
+  - name: "SEASON"
+    type: "categorical"
+    required: true
+    allowed_values: ["WINTER", "SUMMER", "MONSOON", "POST-MONSOON", "PM"]
+  - name: "MONTH"
+    type: "categorical"
+    required: false
+  - name: "LOCATION"
+    type: "categorical"
+    required: true
+  - name: "WEEK"
+    type: "integer"
+    required: false
+  - name: "Temperature"
+    type: "numeric"
+    required: true
+    aliases: ["T", "Temp", "TEMPERATURE"]
+  - name: "Relative_humidity"
+    type: "numeric"
+    required: true
+    aliases: ["RH", "Relative Humidity", "RELATIVE_HUMIDITY"]
+  - name: "RF-CUMULATIVE"
+    type: "numeric"
+    required: true
+    aliases: ["RF_CUMULATIVE", "Rainfall", "RAINFALL"]
+  - name: "Wind_speed"
+    type: "numeric"
+    required: true
+    aliases: ["WS", "Wind Speed", "WIND_SPEED"]
+
+operational_features:
+  - name: "Road_width"
+    type: "numeric"
+    required: false
+    aliases: ["Road Width", "ROAD_WIDTH"]
+  - name: "Distance"
+    type: "numeric"
+    required: false
+    aliases: ["DISTANCE"]
+  - name: "Production_ROM"
+    type: "numeric"
+    required: false
+    aliases: ["Production ROM", "ROM"]
+  - name: "Production_OB"
+    type: "numeric"
+    required: false
+    aliases: ["Production OB", "OB"]
+  - name: "Production_ROM+OB"
+    type: "numeric"
+    required: false
+    aliases: ["Production ROM+OB", "Total Production"]
+  - name: "Vehicle_capacity"
+    type: "numeric"
+    required: false
+    aliases: ["Vehicle Capacity", "VEHICLE_CAPACITY"]
